@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NetIco</title>
+    <meta name="keywords" content="Trabajo" />
+    <meta name="description" content="Una página para la busqueda de talentos" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+      <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+
+
+    <div class="container">
+    <!-- END of templatemo_main -->
+      <div class="overlay">
+          <p class="screen">NetIco</p>
+          <div class="intro">
+                  <button class="myBtn" onclick="fadeOut()">Entrar</button>
+          </div>
+      </div>
+
+      <div class="overlay-2"></div>
+<!-- END of templatemo_main -->
+<header>
+  <div class="logoNetico"></div>
+
+</header>
+
+<div class="sidebar">
+  <ul>
+    <li>
+    <a href="index.html">	<img src="images/logo.png"  alt="Logo aquí" class="logo"></a>
+    </li>
+     <li>
+       <a href="blog.html">Notifiación</a>
+    </li>
+    <li><a href="evento.html">Proximos eventos</a></li>
+    <li><a href="Universidades.html">Universidades</a></li>
+    <li>Sabías que</li>
+
+  </ul>
+</div>
+      <div class="container1" >
+
+        <p>Bienvenidos a NetIco el portal de trabajo donde juntamos a los talentos con su proximo trabajo.
+        <br>
+      Nuestra misión es la de poder dar a conocer al talento bruto sin pulir a empresas que buscan agentes para liderar el futuro.
+
+    <br>
+      <p>Contamos con espacio para que las empresas publiquen sus requerimientos y eventos</p>
+  <p>  espacios para que las universidades muestren lo que pueden producir y espacios para acercar al talento con su siguiente empleador</p>
+<br>
+<p>Esperemos sea de su agrado y encuentre el futuro que tanto busca</p>
+</p>
+
+      </div>
+
+  </div>
+
+<!-- END of templatemo_main -->
+
+    <script>
+
+       function fadeOut() {
+
+       TweenMax.to(".myBtn", 1, {
+            y: -100,
+            opacity: 0
+       });
+
+       TweenMax.to(".screen", 2, {
+            y: -400,
+            opacity: 0,
+            ease: Power2.easeInOut,
+            delay: 2
+       });
+
+       TweenMax.from(".overlay", 2, {
+            ease: Power2.easeInOut
+       });
+
+       TweenMax.to(".overlay", 2, {
+            delay: 2.6,
+            top: "-110%",
+            ease: Expo.easeInOut
+       });
+
+       TweenMax.to(".overlay-2", 2, {
+            delay: 3,
+            top: "-110%",
+            ease: Expo.easeInOut
+       });
+
+       TweenMax.from(".content", 2, {
+            delay: 3.2,
+            opacity: 0,
+            ease: Power2.easeInOut
+       });
+
+       TweenMax.to(".content", 2, {
+            opacity: 1,
+            y: -300,
+            delay: 3.2,
+            ease: Power2.easeInOut
+       });
+
+       }
+
+      </script>
+  </body>
+</html>
